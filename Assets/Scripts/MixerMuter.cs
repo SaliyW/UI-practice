@@ -3,9 +3,11 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 
-public class MixerUser : MonoBehaviour
+[RequireComponent(typeof(Toggle))]
+public class MixerMuter : MonoBehaviour
 {
     [SerializeField] private AudioMixer _audioMixer;
+    [SerializeField] private string _volumeParameterName;
     [SerializeField] private List<Slider> _mixerSliders;
 
     private const string MasterVolume = nameof(MasterVolume);
@@ -13,39 +15,23 @@ public class MixerUser : MonoBehaviour
     private const string MusicVolume = nameof(MusicVolume);
 
     private readonly float _volumeMin = -80;
-    private float _masterVolume;
+    private float _currentVolume;
 
-    public void MuteMaster(bool enable)
+    public void Mute(bool enable)
     {
         if (enable)
         {
-            _audioMixer.SetFloat(MasterVolume, _volumeMin);
+            _audioMixer.GetFloat(_volumeParameterName, out _currentVolume);
+            _audioMixer.SetFloat(_volumeParameterName, _volumeMin);
         }
         else
         {
-            _audioMixer.SetFloat(MasterVolume, _masterVolume);
+            _audioMixer.SetFloat(_volumeParameterName, _currentVolume);
         }
 
         foreach (Slider slider in _mixerSliders)
         {
             slider.interactable = !slider.interactable;
         }
-    }
-
-    public void ChangeMasterVolume(float value)
-    {
-        _masterVolume = Mathf.Log10(value) * 20;
-
-        _audioMixer.SetFloat(MasterVolume, _masterVolume);
-    }
-
-    public void ChangeButtonsVolume(float value)
-    {
-        _audioMixer.SetFloat(ButtonsVolume, Mathf.Log10(value) * 20);
-    }
-
-    public void ChangeMusicVolume(float value)
-    {
-        _audioMixer.SetFloat(MusicVolume, value);
     }
 }
