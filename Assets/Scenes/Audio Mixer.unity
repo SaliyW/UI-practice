@@ -730,19 +730,7 @@ MonoBehaviour:
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 224426224}
-        m_TargetAssemblyTypeName: MixerGroupUser, Assembly-CSharp
-        m_MethodName: ChangeVolume
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &224426224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -755,8 +743,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b014d449a3b76d4448ae055c798677c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioMixer: {fileID: 24100000, guid: 6e691f1eb226a1f42a470b1aaa68d7dd, type: 2}
-  _volumeParameterName: MasterVolume
+  _audioMixerGroup: {fileID: 24300002, guid: 6e691f1eb226a1f42a470b1aaa68d7dd, type: 2}
 --- !u!1 &231707068
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,19 +870,7 @@ MonoBehaviour:
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 240274174}
-        m_TargetAssemblyTypeName: MixerUser, Assembly-CSharp
-        m_MethodName: ChangeVolume
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &240274174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -908,8 +883,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b014d449a3b76d4448ae055c798677c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioMixer: {fileID: 24100000, guid: 6e691f1eb226a1f42a470b1aaa68d7dd, type: 2}
-  _volumeParameterName: MusicVolume
+  _audioMixerGroup: {fileID: -5365930200915232571, guid: 6e691f1eb226a1f42a470b1aaa68d7dd, type: 2}
 --- !u!1 &246821956
 GameObject:
   m_ObjectHideFlags: 0
@@ -2137,19 +2111,7 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1263786617}
-        m_TargetAssemblyTypeName: MixerMuter, Assembly-CSharp
-        m_MethodName: Mute
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_IsOn: 0
 --- !u!114 &1263786617
 MonoBehaviour:
@@ -2163,8 +2125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25194c6633dcaa94f91198f2b92ccf4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioMixer: {fileID: 24100000, guid: 6e691f1eb226a1f42a470b1aaa68d7dd, type: 2}
-  _volumeParameterName: MasterVolume
+  _audioMixerGroup: {fileID: 24300002, guid: 6e691f1eb226a1f42a470b1aaa68d7dd, type: 2}
   _mixerSliders:
   - {fileID: 224426223}
   - {fileID: 1927116395}
@@ -3108,19 +3069,7 @@ MonoBehaviour:
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1927116396}
-        m_TargetAssemblyTypeName: MixerUser, Assembly-CSharp
-        m_MethodName: ChangeVolume
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1927116396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3133,8 +3082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b014d449a3b76d4448ae055c798677c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioMixer: {fileID: 24100000, guid: 6e691f1eb226a1f42a470b1aaa68d7dd, type: 2}
-  _volumeParameterName: ButtonsVolume
+  _audioMixerGroup: {fileID: 4269233414486741198, guid: 6e691f1eb226a1f42a470b1aaa68d7dd, type: 2}
 --- !u!1 &1957089420
 GameObject:
   m_ObjectHideFlags: 0
